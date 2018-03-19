@@ -4,7 +4,7 @@
  */
 var app = angular.module("dentistApp");
 (function(app){
-    app.controller("MainController", function($scope,$routeParams){
+    app.controller("MainController", function($scope,$routeParams,$location){
         console.log($routeParams)
         console.log("connected main controller....")
         $scope.userInfo = {};
@@ -12,6 +12,9 @@ var app = angular.module("dentistApp");
             if($scope.userInfo){
                 console.log($scope.userInfo)
             }
+        };
+        $scope.goToLoginPage = function(){
+            $location.path('/login.html');
         };
     });
 })(app);
