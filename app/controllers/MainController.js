@@ -13,8 +13,8 @@ var app = angular.module("dentistApp");
                 console.log($scope.userInfo)
             }
         };
-        $scope.goToLoginPage = function(){
-            $location.path('/login.html');
+        $scope.goToLoginPage = function(path){
+            $location.path(path);
         };
     });
 })(app);

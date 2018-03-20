@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dentist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="/">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main-styles.css" />
 
@@ -16,6 +15,7 @@
     <script src="app/app.js"></script>
     <script src="app/controllers/MainController.js"></script>
     <script src="app/controllers/login/LoginController.js"></script>
+    <base href="/">
 </head>
 <body data-ng-controller="MainController">
     <div id="site-content">
@@ -25,8 +25,8 @@
                     <a class="navbar-brand" href="#"><img src="http://dentistlink.org/wp-content/uploads/2017/10/grey-tagline-10-e1507743617441.png"></a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li data-ng-if="fase"><a href="#/login" target="_self"> Login</a></li>
-                    <li data-ng-if="true" class="dropdown">
+                    <li data-ng-if="true"><a href="/login" target="_self"> Login</a></li>
+                    <li data-ng-if="false" class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Setting
                             <span class="caret"></span>
                         </a>
@@ -60,7 +60,7 @@
                 <div class="col-sm-4">&nbsp;</div>
                 <div class="col-sm-4">
                     <div class="contact-info-container">
-                        <p class="address"><span>400 Fairview Ave N.
+                        <p class="address"><span>400 Fairview Ave N.</span>
                             <br/>Seattle, WA 98109
                         </p>
                         <p class="email">Email: <a href="mailto:Info@arcorafoundation.org">info@arcorafoundation.org</a></p>

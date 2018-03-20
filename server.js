@@ -12,6 +12,7 @@ app.use('/app', express.static(__dirname + '/app'));
 app.use('/css', express.static(__dirname + '/css'));
 app.get('/*', function(req, res){
   res.sendFile(__dirname + '/index.html');
+    console.log(res)
 });
 
 app.listen(config.port, function(err){

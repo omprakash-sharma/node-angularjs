@@ -15,6 +15,7 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider,$locat
 	})
 	.when("/login", {
 		templateUrl : () => "app/views/Login/login.html",
+		//template: '<div>Login page loading.....</div>',
 		controller: "LoginControlle"
 	})
 	.otherwise({
